@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts link--------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Bree+Serif&family=Merienda&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <!-- ------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="style.css">
+    <title> PRODUCT DETAILS | GADA ELECTRONICS</title>
+</head>
+
+<body>
+
+    <div class="header" style="background: none; ">
+
+        <div class="container">
+
+            <!-- navigation bar .............................. -->
+
+            <div class="navbar">
+                <div class="logo">
+                    <img src="6.png" alt="Gada electronics logo" width="30px" height="40px">
+                    <p>GADA ELECTRONICS</p>
+                </div>
+                <nav>
+                    <ul id="menuitem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+
+                <span id="cart" class="material-icons  md-36" style="color: rgb(148, 136, 136);"> shopping_cart
+                </span>
+                <span class="material-icons menu md-36" onclick="menutoggle()">
+                    menu
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- ---------------------single product details page ------------------------------ -->
+
+    <div class="small-container  single-product">
+        <div class="rows">
+            <div class="cols-2">
+                <img src="product/1.JPG" alt="Rog Gaming" width="100%" id="productimg">
+                <div class="small-img-row">
+                    <div class="small-img-cols">
+                        <img src="product/1.JPG" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-cols">
+                        <img src="product/2.JPG" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-cols">
+                        <img src="product/3.JPG" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-cols">
+                        <img src="product/4.JPG" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-cols">
+                        <img src="product/5.JPG" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-cols">
+                        <img src="product/6.JPG" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-cols">
+                        <img src="product/7.JPG" alt="" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="cols-2">
+                <h1>ROG Gaming Laptop</h1>
+                <h4>RS. 55000.00</h4>
+                <hr>
+                <select name="" id="">
+                    <option value="">Select Color</option>
+                    <option value="">Black</option>
+                    <option value="">White</option>
+                    <option value="">Grey</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn"> Add to Cart</a>
+               
+                <h3>Product Details</h3>
+                <hr>
+                <p>Operating System : Windows 10</p>
+                <p>RAM : 12GB</p>
+                <p>Storage : 800 GB SSD </p>
+                <p>Display : LED </p>
+                <p>Size : 21 inch </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -----------------------footer----------------------------------- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="rows">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone also </p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="6.png" width="70px" alt="logo">
+                    <p>our purpose is to sustainably make the pleasure and benefits for you</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupns</li>
+                        <li>Blog Spot</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilities</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>copyright @ 2021 All Right Reserved</p>
+        </div>
+    </div>
+
+
+    <!-- --------------------------------------Js for toggle menu ----------------------- -->
+
+    <script>
+        var menuitem = document.getElementById("menuitem");
+
+        menuitem.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuitem.style.maxHeight == "0px") {
+                menuitem.style.maxHeight = "200px"
+            }
+            else {
+                menuitem.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+    <!-- js for  product gallery  -->
+    <script>
+        var productimg = document.getElementById("productimg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function () {
+            productimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function () {
+            productimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function () {
+            productimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function () {
+            productimg.src = smallimg[3].src;
+        }
+        smallimg[4].onclick = function () {
+            productimg.src = smallimg[4].src;
+        }
+        smallimg[5].onclick = function () {
+            productimg.src = smallimg[5].src;
+        }
+        smallimg[6].onclick = function () {
+            productimg.src = smallimg[6].src;
+        }
+    </script>
+</body>
+
+</html>

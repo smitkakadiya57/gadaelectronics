@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts link--------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Bree+Serif&family=Merienda&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <!-- ------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="style.css">
+    <title> PRODUCT DETAILS | GADA ELECTRONICS</title>
+</head>
+
+<body>
+
+    <div class="header" style="background: none; ">
+
+        <div class="container">
+
+            <!-- navigation bar .............................. -->
+
+            <div class="navbar">
+                <div class="logo">
+                    <img src="6.png" alt="Gada electronics logo" width="30px" height="40px">
+                    <p>GADA ELECTRONICS</p>
+                </div>
+                <nav>
+                    <ul id="menuitem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+
+                <span id="cart" class="material-icons  md-36" style="color: rgb(148, 136, 136);"> shopping_cart
+                </span>
+                <span class="material-icons menu md-36" onclick="menutoggle()">
+                    menu
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- all products list  -->
+    <div class="small-container">
+        <h2 class="title">All Products </h2>
+        <div id="myBtnContainer">
+            <button class="bttn active" onclick="filterSelection('all')"> Show All</button>
+            <button class="bttn" onclick="filterSelection('Laptops')"> Laptops</button>
+            <button class="bttn" onclick="filterSelection('Desktops')"> Desktops</button>
+            <button class="bttn" onclick="filterSelection('Tablets')"> Tablets</button>
+            <button class="bttn" onclick="filterSelection('Accesories')"> Accesories</button>
+        </div>
+
+        <div class="container">
+            <div class="filterDiv Tablets">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/21.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4>Samsung 16'' Tablet</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 14000.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv  Tablets">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/16.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> I-pad Pro</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star_half </span>
+                        </div>
+                        <p>Rs. 55000.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Laptops">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/1.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> ROG Gaming Laptop</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 55000.00 </p>
+                        <a href="productdetail.html" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Accesories">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/24.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Syska Extention Board</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 500.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Accesories">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/25.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> APC Stabilizer</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 4800.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Accesories">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/26.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Zebronics Key-Board Mouse</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 1699.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Accesories">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/27.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Multi USB Port</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 299.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Accesories">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/28.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> LCD writing Pad</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 2299.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Accesories">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/29.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Externel USB LED Lamp</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 499.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Accesories">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/30.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Keyboard Guard</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 199.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Desktops">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/c1.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> OLD classic Desktop</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 7999.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Desktops">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/c2.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Modern DEll Desktop</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 22000.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Desktops">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/c4.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Lenovo Desktop</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 13000.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Desktops">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/c5.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> HP Desktop</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 19000.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv  Tablets">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/17.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Lenovo Tablet 2GB RAM</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 8999.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv  Tablets">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/22.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Samsung Android Tablets</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star_half </span>
+                        </div>
+                        <p>Rs. 16999.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Laptops">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/10.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> HP Laptop</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                             </div>
+                        <p>Rs. 51099.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Laptops">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/12.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> DELL Laptop</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 45999.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv Laptops">
+                <div class="cols-4">
+                    <div class="productimg">
+                        <img src="product/14.JPG" alt="samsung tablet">
+                    </div>
+                    <div class="pdetails">
+                        <h4> Lenovo Ideapad Touch</h4>
+                        <div class="ratings">
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                            <span class="material-icons " style="color: orange;"> star </span>
+                        </div>
+                        <p>Rs. 65000.00 </p>
+                        <a href="" style="color: blueviolet;">see more...</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    <!-- -----------------------footer----------------------------------- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="rows">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone also </p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="6.png" width="70px" alt="logo">
+                    <p>our purpose is to sustainably make the pleasure and benefits for you</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupns</li>
+                        <li>Blog Spot</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilities</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>copyright @ 2021 All Right Reserved</p>
+        </div>
+    </div>
+
+
+    <!-- --------------------------------------Js for toggle menu ----------------------- -->
+
+    <script>
+        var menuitem = document.getElementById("menuitem");
+
+        menuitem.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuitem.style.maxHeight == "0px") {
+                menuitem.style.maxHeight = "200px"
+            }
+            else {
+                menuitem.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+
+    <!-- js for ffilter  -->
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>
